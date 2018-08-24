@@ -5,5 +5,6 @@ require './lib/place'
 require 'pry'
 
 get '/' do
+  @places = Place.all()
   erb(:places)
 end

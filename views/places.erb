@@ -1,5 +1,11 @@
 <h1>Places I've been</h1>
 
+<ul class="list-group">
+  <% @places.each do |place| %>
+    <li class="list-group-item"><%= place.name %></li>
+  <% end %>
+</ul>
+
 <form class="" action="/" method="post">
   <div class="form-group">
     <label for="name">Name of place you've been to</label>
