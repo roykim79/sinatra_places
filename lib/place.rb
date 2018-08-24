@@ -8,4 +8,8 @@ class Place
   def self.all()
     @@places
   end
+
+  def save()
+    @@places.push(self)
+  end
 end
