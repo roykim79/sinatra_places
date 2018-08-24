@@ -2,6 +2,10 @@ require 'rspec'
 require 'place'
 
 describe 'Place' do
+  before :each do
+    Place.clear()
+  end
+  
   describe '.all' do
     it 'is empty at first' do
       expect(Place.all).to eq([])
