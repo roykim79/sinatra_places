@@ -11,6 +11,10 @@ class Place
     @@places
   end
 
+  def self.clear()
+    @@places = []
+  end
+
   def save()
     @@places.push(self)
   end

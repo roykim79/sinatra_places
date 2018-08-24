@@ -8,6 +8,14 @@ describe 'Place' do
     end
   end
 
+  describe '.clear' do
+    it 'empties the places list' do
+      place = Place.new('foo')
+      Place.clear()
+      expect(Place.all).to eq([])
+    end
+  end
+
   describe '#save' do
     it 'add a new place instance to the places list' do
       place = Place.new('foo')
